@@ -1,0 +1,162 @@
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+/* *,
+    *:before,
+    *:after {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    } */
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  /* влияет на размер окна - есл и не входит переносит */
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 18px; /* указал который нужен для транслита */
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+
+body {
+  min-height: auto;
+  background-color: rgb(199, 199, 199);
+  font-family: "IBM Plex Mono", sans-serif;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+}
+img {
+  padding: 20px 0;
+  width: 300px;
+}
+
+input {
+  font-size: 1rem;
+  text-align: center;
+  padding: 10px 0;
+  background-color: rgba(222, 230, 238, 0.903);
+}
+button {
+  font-size: 0.8rem;
+  height: 40px;
+  background-color: #94a9a9;
+  padding: 10px 0;
+}
+
+h1 {
+  font-size: 2rem;
+  padding: 20px 0;
+}
+
+.textD {
+  width: 300px;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.content {
+  display: grid;
+  text-align: center;
+}
+
+.voprosOtv {
+  display: grid;
+  grid-template-columns: 0.4fr 0.6fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header"
+    "side content";
+}
+
+.grid-a,
+.grid-q {
+  padding: 15px;
+  /* border: 2px solid #443a3a; */
+  margin: 0 0 15px 5px;
+  text-align: center;
+}
+.grid-q {
+  background-color: #d4dbe3ca;
+}
+.grid-a {
+  background-color: rgb(231, 229, 227);
+}
+#hi {
+  position: absolute;
+  left: 20%;
+  top: 10%;
+  width: 150px;
+}
+#hii {
+  position: absolute;
+  right: 19%;
+  top: 19%;
+  width: 120px;
+}
+@media (max-width: 767.98px) {
+  #hi,
+  #hii {
+    display: none;
+  }
+}
